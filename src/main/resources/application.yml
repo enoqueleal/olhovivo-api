@@ -1,0 +1,15 @@
+spring:
+    main:
+        banner-mode: "off"
+    mvc:
+        view:
+            prefix: /WEB-INF/pages/
+            suffix: .jsp
+            
+olhovivo:
+    url: ${OLHO_VIVO_URL}
+    token: ${OLHO_VIVO_TOKEN}
+    resource:
+        position: Posicao/Linha?codigoLinha=
+        lines: Linha/Buscar?termosBusca=
+        login: Login/Autenticar?token=
